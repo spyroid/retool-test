@@ -21,6 +21,7 @@ template:
     - query: https://httpbin.org/get
     - playgroundQueryUuid: ''
     - playgroundQueryId: 0
+    - error: null
     - privateParams: []
     - triggersOnSuccess: []
     - runWhenPageLoadsDelay: ''
