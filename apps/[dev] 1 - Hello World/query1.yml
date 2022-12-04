@@ -9,6 +9,7 @@ template:
     - body: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: 0
@@ -21,6 +22,7 @@ template:
     - query: https://httpbin.org/get
     - playgroundQueryUuid: ''
     - playgroundQueryId: 0
+    - error: null
     - privateParams: []
     - triggersOnSuccess: []
     - runWhenPageLoadsDelay: ''
@@ -33,6 +35,7 @@ template:
     - cacheKeyTtl: ''
     - cookies: ''
     - metadata: null
+    - queryRunTime: null
     - triggersOnFailure: []
     - changesetObject: ''
     - errorTransformer: >-
@@ -42,6 +45,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
