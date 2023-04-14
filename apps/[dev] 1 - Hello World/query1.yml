@@ -9,9 +9,12 @@ template:
     - body: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: 0
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - paginationPaginationField: ''
@@ -21,6 +24,7 @@ template:
     - query: https://httpbin.org/get
     - playgroundQueryUuid: ''
     - playgroundQueryId: 0
+    - error: null
     - privateParams: []
     - triggersOnSuccess: []
     - runWhenPageLoadsDelay: ''
@@ -31,8 +35,10 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - queryRunTime: null
     - triggersOnFailure: []
     - changesetObject: ''
     - errorTransformer: >-
@@ -42,6 +48,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -67,13 +74,15 @@ template:
         return data
     - events: []
     - queryTimeout: '10001'
+    - workflowId: null
     - requireConfirmation: false
     - type: GET
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - bodyType: json
+    - bodyType: none
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
